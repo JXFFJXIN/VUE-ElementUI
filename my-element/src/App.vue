@@ -1,4 +1,3 @@
-/* eslint-disable import/no-unresolved */
 <template>
   <div id="app">
     <dl>
