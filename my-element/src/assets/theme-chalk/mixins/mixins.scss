@@ -1,0 +1,72 @@
+@import "./config"; //
+@import "./var";
+
+/* BEM*/
+@mixin b($block) {
+  //.el-block
+  $B: $-cg-namespace + '-'+ $block;
+
+  .#{$B} {
+    @content;
+  }
+}
+
+@mixin m($modifier) {
+  // &--modifier
+  $currentSelector: "";
+
+  @each $unit in $modifier {
+    $currentSelector: $currentSelector + & + $-cg-modifier-separator + $unit + ',';
+  }
+
+  @at-root {
+    #{$currentSelector} {
+      @content;
+    }
+  }
+}
+
+@mixin when($state) {
+
+  //&is-
+  @at-root {
+    &.#{$-cg-state-prefix + $state} {
+      @content;
+    }
+  }
+}
+
+/* 断点 */
+@mixin res($key, $map: $-vr--breakpoints) {
+  @if map-has-key($map, $key) {
+    @media only screen and #{inspect(map-get($map, $key))} {
+      .el-col-#{$key}-0 {
+        display: none;
+      }
+
+      @for $i from 0 through 24 {
+        .el-col-#{$key}-#{$i} {
+          width: $i / 24 * 100%;
+        }
+
+        .el-col-#{$key}-offset-#{$i} {
+          margin-left: $i / 24 * 100%;
+        }
+
+        .el-col-#{$key}-push-#{$i} {
+          position: relative;
+          left: $i / 24 * 100%;
+        }
+
+        .el-col-#{$key}-pull-#{$i} {
+          position: relative;
+          right: $i / 24 * 100%;
+        }
+      }
+    }
+  }
+
+  @else {
+    @warn "undefined points: `#{$map}`"
+  }
+};
