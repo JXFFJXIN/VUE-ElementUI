@@ -7,7 +7,11 @@ dl{
     border-radius: 15px;
     min-width:350px;
   }
-  
+  h1 {
+    color:#c48585;
+    font-size: 2rem;
+    text-align:center
+  }
   h2 {
     color:#c48585;
     font-size: 1rem;
@@ -24,6 +28,21 @@ dl{
       &:last-child {
         margin-bottom: 0;
       }
+    }
+    .el-container {
+        background:red;
+    }
+    .el-header {
+        background:black;
+    }
+    .el-footer {
+        background:gray;
+    }
+    .el-main {
+        background:yellow;
+    }
+    .el-aside {
+        background:green;
     }
     .el-col {
       border-radius: 4px;

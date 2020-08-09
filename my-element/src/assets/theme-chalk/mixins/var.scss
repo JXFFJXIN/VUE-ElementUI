@@ -11,3 +11,11 @@ $-vr--breakpoints: (
   'lg': (min-width: $--lg),
   'xl': (min-width: $--xl),
 );
+
+/* header component */
+$-vr--header-padding:0 20px !default;
+/* footer component */
+$-vr--footer-padding:0 20px !default;
+/* main component */
+$-vr--main-padding:0 20px !default;
+/* color */

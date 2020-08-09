@@ -1,0 +1,10 @@
+@import "./mixins/mixins.scss";
+@import "./mixins/var.scss";
+
+@include b(header){
+    box-sizing:border-box;
+    padding:$-vr--header-padding;
+    flex-shrink: 0,
+    // flex-shrink: number|initial|inherit;
+    // flex-shrink的默认值为1，如果没有显示定义该属性，将会自动按照默认值1在所有因子相加之后计算比率来进行空间收缩。
+}
