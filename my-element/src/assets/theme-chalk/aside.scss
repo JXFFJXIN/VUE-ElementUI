@@ -1,0 +1,5 @@
+@import './mixins/mixins';
+@import './mixins/var';
+
+@include b(footer){
+}
