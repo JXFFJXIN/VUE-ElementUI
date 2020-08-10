@@ -269,14 +269,14 @@
         </el-container>
 
         <el-container>
-          <el-aside width="200" >Aside</el-aside>
+          <el-aside width="200">Aside</el-aside>
           <el-main>Main</el-main>
         </el-container>
 
         <el-container>
           <el-header>Header</el-header>
           <el-container>
-            <el-aside width="200" >Aside</el-aside>
+            <el-aside width="200">Aside</el-aside>
             <el-main>Main</el-main>
           </el-container>
         </el-container>
@@ -284,7 +284,7 @@
         <el-container>
           <el-header>Header</el-header>
           <el-container>
-            <el-aside width="200" >Aside</el-aside>
+            <el-aside width="200">Aside</el-aside>
             <el-container>
               <el-main>Main</el-main>
               <el-footer>Footer</el-footer>
@@ -293,7 +293,7 @@
         </el-container>
 
         <el-container>
-          <el-aside width="200" >Aside</el-aside>
+          <el-aside width="200">Aside</el-aside>
           <el-container>
             <el-header>Header</el-header>
             <el-main>Main</el-main>
@@ -301,7 +301,7 @@
         </el-container>
 
         <el-container>
-          <el-aside width="200" >Aside</el-aside>
+          <el-aside width="200">Aside</el-aside>
           <el-container>
             <el-header>Header</el-header>
             <el-main>Main</el-main>
@@ -316,15 +316,56 @@
       <h1>icon图标</h1>
       <dt>
         <div class="grid-content bg-purple">
-          <el-icon name='edit'></el-icon>
-          <el-icon name='share'></el-icon>
-          <el-icon name='delete'></el-icon>
-          <el-icon name='loading'></el-icon>
+          <el-icon name="edit"></el-icon>
+          <el-icon name="share"></el-icon>
+          <el-icon name="delete"></el-icon>
+          <el-icon name="loading"></el-icon>
         </div>
       </dt>
       <h2>代码展示</h2>
-      <dd>xxx
-      </dd>
+      <dd>xxx</dd>
+    </dl>
+    <dl>
+      <h1>button按钮</h1>
+      <dt>
+        <el-row>
+          <el-button>默认按钮</el-button>
+          <el-button type="primary">主要按钮</el-button>
+          <el-button type="success">成功按钮</el-button>
+          <el-button type="info">信息按钮</el-button>
+          <el-button type="warning">警告按钮</el-button>
+          <el-button type="danger">危险按钮</el-button>
+        </el-row>
+
+        <el-row>
+          <el-button plain>朴素按钮</el-button>
+          <el-button type="primary" plain>主要按钮</el-button>
+          <el-button type="success" plain>成功按钮</el-button>
+          <el-button type="info" plain>信息按钮</el-button>
+          <el-button type="warning" plain>警告按钮</el-button>
+          <el-button type="danger" plain>危险按钮</el-button>
+        </el-row>
+
+        <el-row>
+          <el-button round>圆角按钮</el-button>
+          <el-button type="primary" round>主要按钮</el-button>
+          <el-button type="success" round>成功按钮</el-button>
+          <el-button type="info" round>信息按钮</el-button>
+          <el-button type="warning" round>警告按钮</el-button>
+          <el-button type="danger" round>危险按钮</el-button>
+        </el-row>
+
+        <el-row>
+          <el-button icon="el-icon-search" circle></el-button>
+          <el-button type="primary" icon="el-icon-edit" circle></el-button>
+          <el-button type="success" icon="el-icon-check" circle></el-button>
+          <el-button type="info" icon="el-icon-message" circle></el-button>
+          <el-button type="warning" icon="el-icon-star-off" circle></el-button>
+          <el-button type="danger" icon="el-icon-delete" circle></el-button>
+        </el-row>
+      </dt>
+      <h2>代码展示</h2>
+      <dd>xxx</dd>
     </dl>
   </div>
 </template>
