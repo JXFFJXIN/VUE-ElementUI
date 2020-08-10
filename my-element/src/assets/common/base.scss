@@ -11,6 +11,11 @@ dl {
   box-shadow:$--box-shadow-light;
 }
 
+i{
+  font-size:35px;
+  color: $--color-text-regular;
+}
+
 h1 {
   color: $--color-primary-light-2;
   font-size: 2rem;

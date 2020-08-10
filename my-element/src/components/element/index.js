@@ -6,6 +6,7 @@ import Header from './header';
 import Main from './main';
 import Footer from './footer';
 import Aside from './aside';
+import Icon from './icon';
 // 收纳组件
 const components = [
   Row,
@@ -15,6 +16,7 @@ const components = [
   Main,
   Footer,
   Aside,
+  Icon,
 ];
 // 注册组件
 const install = (Vue) => {
@@ -32,6 +34,7 @@ export default {
   Main,
   Footer,
   Aside,
+  Icon,
 };
 // 为了配合库的常规使用2基础导出Row和Col组件
 export {
@@ -43,4 +46,5 @@ export {
   Main,
   Footer,
   Aside,
+  Icon,
 };

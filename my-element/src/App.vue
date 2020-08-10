@@ -312,5 +312,19 @@
       <h2>代码展示</h2>
       <dd>xxx</dd>
     </dl>
+    <dl>
+      <h1>icon图标</h1>
+      <dt>
+        <div class="grid-content bg-purple">
+          <el-icon name='edit'></el-icon>
+          <el-icon name='share'></el-icon>
+          <el-icon name='delete'></el-icon>
+          <el-icon name='loading'></el-icon>
+        </div>
+      </dt>
+      <h2>代码展示</h2>
+      <dd>xxx
+      </dd>
+    </dl>
   </div>
 </template>
