@@ -1,37 +1,31 @@
-$-test-color-a : #bf9999;
-$-test-color-b : #c48585;
-$-test-color-c : #e6d3d3;
-$-test-color-d : #f17c7c;
-$-test-color-e : #fbf1f1;
-$-test-text : rgb(68, 49, 49);
-
-
+@import '../theme-chalk/mixins/var.scss';
 
 dl {
   text-align: center;
   margin: 0 10vh;
   margin-bottom: 5vh;
   padding: 0 2vh;
-  border: $-test-color-a solid 2px;
-  border-radius: 15px;
+  border:$--border-base;
+  border-radius: $--border-radius-base;
   min-width: 350px;
+  box-shadow:$--box-shadow-light;
 }
 
 h1 {
-  color: $-test-color-b;
+  color: $--color-primary-light-2;
   font-size: 2rem;
   text-align: center
 }
 
 h2 {
-  color: $-test-color-a;
+  color: $--color-primary-light-1;
   font-size: 1rem;
   text-align: center
 }
 
 dd {
-  border: $-test-color-c solid 2px;
-  border-radius: 15px;
+  border: $--border-midden;
+  border-radius: $--border-radius-base;
   margin: 0 0 2vh 0;
 }
 
@@ -45,37 +39,29 @@ dd {
 
 .el-header,
 .el-footer {
-  background-color: $-test-color-a;
-  color:$-test-text;
+  background-color: $--color-primary-light-3;
+  color: $--color-text-primary;
   text-align: center;
   line-height: 60px;
 }
 
 .el-aside {
-  background-color: $-test-color-b;
-  color: $-test-text;
+  background-color: $--color-primary-light-5;
+  color: $--color-text-primary;
   text-align: center;
   line-height: 200px;
 }
 
 .el-main {
-  background-color: $-test-color-c;
-  color: $-test-text;
+  background-color: $--color-primary-light-7;
+  color: $--color-text-primary;
   text-align: center;
-  line-height: 160px;
+  line-height: 150px;
 }
 
 .el-container {
-  margin-bottom: 40px;
-}
-
-.el-container:nth-child(5) .el-aside,
-.el-container:nth-child(6) .el-aside {
-  line-height: 260px;
-}
-
-.el-container:nth-child(7) .el-aside {
-  line-height: 320px;
+  padding-bottom: 40px;
+  overflow: hidden;
 }
 
 .el-col {
@@ -83,25 +69,25 @@ dd {
 }
 
 .bg-purple-dark {
-  background: $-test-color-a;
+  background: $--color-primary-light-3;
 }
 
 .bg-purple {
-  background: $-test-color-c;
+  background: $--color-primary-light-5;
 }
 
 .bg-purple-light {
-  background: $-test-color-e;
+  background: $--color-primary-light-7;
 }
 
 .grid-content {
-  border-radius: 4px;
+  border-radius: $--border-radius-small;
   min-height: 36px;
 }
 
 .row-bg {
   padding: 10px 0;
-  background-color: $-test-color-e;
+  background-color: $--color-primary-light-8;
 }
 
 .hidden {

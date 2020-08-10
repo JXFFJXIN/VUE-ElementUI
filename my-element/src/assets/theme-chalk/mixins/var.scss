@@ -18,4 +18,72 @@ $-vr--header-padding:0 20px !default;
 $-vr--footer-padding:0 20px !default;
 /* main component */
 $-vr--main-padding:0 20px !default;
+/* aside component */
+$-vr--aside-padding:0 20px !default;
 /* color */
+// Mix函数
+//Mix函数是将两种颜色根据一定的比例混合在一起，生成另一种颜色
+//语法
+//mix（$color-1,$color-2,$weight）;
+//$color-1,$color-2指的是需要合并的颜色，颜色可以是任何表达式，也可以是颜色变量
+//$weight为合并的比例（选择权重），
+//默认值是50%，其取值范围是0-1之间，默认的比例是50%，这意味着两种颜色各占一半。
+//如果指定的比例是25%，这意味着第一个颜色的比例为25%，第二个为75%
+$--color-primary:#bd4a42 !default;
+$--color-white:#ffffff !default;
+$--color-black:#000000 !default;
+//主色
+$--color-primary-light-1:mix($--color-white,$--color-primary,10%) !default;
+$--color-primary-light-2:mix($--color-white,$--color-primary,20%) !default;
+$--color-primary-light-3:mix($--color-white,$--color-primary,30%) !default;
+$--color-primary-light-4:mix($--color-white,$--color-primary,40%) !default;
+$--color-primary-light-5:mix($--color-white,$--color-primary,50%) !default;
+$--color-primary-light-6:mix($--color-white,$--color-primary,60%) !default;
+$--color-primary-light-7:mix($--color-white,$--color-primary,70%) !default;
+$--color-primary-light-8:mix($--color-white,$--color-primary,80%) !default;
+$--color-primary-light-9:mix($--color-white,$--color-primary,90%) !default;
+//辅助色
+//成功颜色
+$--color-success:#67c23a !default;
+$--color-success-light:mix($--color-white,$--color-success,80%) !default;
+$--color-success-lighter:mix($--color-white,$--color-success,90%) !default;
+//警告颜色
+$--color-warning:#e6a23c !default;
+$--color-warning-light:mix($--color-white,$--color-warning,80%) !default;
+$--color-warning-lighter:mix($--color-white,$--color-warning,90%) !default;
+//危险颜色
+$--color-denger:#f56c6c !default;
+$--color-denger-light:mix($--color-white,$--color-denger,80%) !default;
+$--color-denger-lighter:mix($--color-white,$--color-denger,90%) !default;
+//信息颜色
+$--color-info:#909399 !default;
+$--color-info-light:mix($--color-white,$--color-info,80%) !default;
+$--color-info-lighter:mix($--color-white,$--color-info,90%) !default;
+//中性色
+//主要文字
+$--color-text-primary:#303133 !default;
+//常规文字
+$--color-text-regular:#606266 !default;
+//次要文字
+$--color-text-secondary:#909399 !default;
+//占位文字
+$--color-text-placeholder:#c0c4cc !default;
+
+/* Typography */
+$--font-size-extra-large:20px !default;//主标题
+$--font-size-large:18px !default;//标题
+$--font-size-medium:16px !default;//小标题
+$--font-size-base:14px !default;//正文
+$--font-size-small:13px !default;//正文（小）
+$--font-size-extra-small:12px !default;//辅助文字
+
+/* border */
+$--border-width-base:2px !default;
+$--border-style-base:solid !default;
+$--border-base:$--border-width-base $--border-style-base $--color-primary-light-5 !default;
+$--border-midden:$--border-width-base $--border-style-base $--color-primary-light-3 !default;
+$--border-radius-base:10px !default;//大圆角
+$--border-radius-small:5px !default;//小圆角
+$--border-radius-zero:0px !default;//无圆角
+$--box-shadow-base:0 2px 4px rgba(0,0,0,.12),0 0 6px rgba(0,0,0,.04) !default;
+$--box-shadow-light:0 2px 12px 0 rgba(0,0,0,.1) !default;
