@@ -8,6 +8,7 @@ import Footer from './footer';
 import Aside from './aside';
 import Icon from './icon';
 import Button from './button';
+import ButtonGroup from './buttonGroup';
 // 收纳组件
 const components = [
   Row,
@@ -19,6 +20,7 @@ const components = [
   Aside,
   Icon,
   Button,
+  ButtonGroup,
 ];
 // 注册组件
 const install = (Vue) => {
@@ -38,6 +40,7 @@ export default {
   Aside,
   Icon,
   Button,
+  ButtonGroup,
 };
 // 为了配合库的常规使用2基础导出Row和Col组件
 export {
@@ -51,4 +54,5 @@ export {
   Aside,
   Icon,
   Button,
+  ButtonGroup,
 };

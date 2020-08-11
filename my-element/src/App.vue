@@ -367,5 +367,23 @@
       <h2>代码展示</h2>
       <dd>xxx</dd>
     </dl>
+    <dl>
+      <h1>button-group 按钮组</h1>
+      <dt>
+        <el-button-group>
+          <el-button type="primary" icon="el-icon-arrow-left">上一页</el-button>
+          <el-button type="primary">
+            下一页<i class="el-icon-arrow-right el-icon--right"></i>
+          </el-button>
+        </el-button-group>
+        <el-button-group>
+          <el-button type="primary" icon="el-icon-edit"></el-button>
+          <el-button type="primary" icon="el-icon-share"></el-button>
+          <el-button type="primary" icon="el-icon-delete"></el-button>
+        </el-button-group>
+      </dt>
+      <h2>代码展示</h2>
+      <dd>xxx</dd>
+    </dl>
   </div>
 </template>
