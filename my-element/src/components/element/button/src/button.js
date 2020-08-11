@@ -40,9 +40,10 @@ export default {
     }, [
       this.icon && !this.loading ? h('i', {
         class: this.icon,
-      }, null) : h('i', {
+      }, null) : null,
+      this.loading ? h('i', {
         class: 'el-icon-loading',
-      }, null),
+      }, null) : null,
       this.$slots.default ? h('span', this.$slots.default) : null,
     ]);
   },
