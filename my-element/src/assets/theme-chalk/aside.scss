@@ -1,0 +1,7 @@
+@import './mixins/mixins';
+@import './mixins/var';
+
+@include b(aside){
+    box-sizing:border-box;
+    padding: $-vr--aside-padding; //默认属性拥有
+}

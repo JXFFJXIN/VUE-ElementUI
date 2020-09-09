@@ -1,0 +1,10 @@
+@import './mixins/mixins';
+@import './mixins/var';
+
+@include b(main){
+    box-sizing:border-box;
+    display:block;
+    overflow:hidden;
+    flex:1;
+    padding:$-vr--main-padding;
+}
